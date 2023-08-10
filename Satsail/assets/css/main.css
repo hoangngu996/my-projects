@@ -739,6 +739,7 @@
 
 .app__product-pics {
     margin-bottom: 24px;
+    overflow: hidden;
 }
 
 .app__product-link {
@@ -748,6 +749,13 @@
 
 .app__product-img {
     width: 100%;
+    transition: all ease-out .3s;
+    filter: brightness(100%);
+}
+
+.app__product-img:hover {
+    transform: scale(1.02);
+    filter: brightness(95%);
 }
 
 .app__product-img-special {
@@ -977,8 +985,19 @@
     margin: 3px;
 }
 
+.footer__insta-inner {
+    overflow: hidden;
+}
+
 .insta-img {
     width: 100%;
+    transition: all ease-out 0.3s;
+    filter: brightness(100%);
+}
+
+.insta-img:hover {
+    transform: scale(1.03);
+    filter: brightness(95%);
 }
 
 .footer__copyright-inner {
